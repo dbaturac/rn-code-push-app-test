@@ -2,5 +2,7 @@ pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
 plugins { id("com.facebook.react.settings") }
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 rootProject.name = 'RNCodepushTest'
-include ':app'
+//include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+include ':app', ':chlee1001_react-native-code-push'
+project(':chlee1001_react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/@chlee1001/react-native-code-push/android/app')
