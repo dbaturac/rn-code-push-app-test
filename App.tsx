@@ -9,14 +9,22 @@ import Snackbar from './src/components/common/snackbar';
 // import { useCodePush } from './src/hooks/useCodePush.ts';
 
 const App: React.FC = () => {
-  const [snackbarVisible, setSnackbarVisible] = useState(true);
+  const [snackbarVisible, setSnackbarVisible] = useState(false);
   // const {isUpdateDownloaded} = useCodePush();
 
-  // useEffect(() => {
-  //   if (isUpdateDownloaded) {
-  //     setSnackbarVisible(true);
-  //   }
-  // }, [isUpdateDownloaded]);
+  useEffect(() => {
+    CodePush.sync(
+      {
+        installMode: CodePush.InstallMode.ON_NEXT_RESTART,
+      },
+      (syncStatus) => {
+        // Güncelleme yüklendiyse snackbar'ı göster
+        if (syncStatus === CodePush.SyncStatus.UPDATE_INSTALLED) {
+          setSnackbarVisible(true);
+        }
+      }
+    );
+  }, []);
 
   // Press the back button to exit the app
   useEffect(() => {
@@ -46,7 +54,7 @@ const App: React.FC = () => {
         alignContent: 'center',
         justifyContent: 'center',
       }}>
-      <Text>{`Helllo! Cenk this is code push example app.\n${currentVersion}\n`}</Text>
+      <Text>{`Rollback öncesi codepush testNew.\n${currentVersion}\n`}</Text>
 
       <Snackbar
           visible={snackbarVisible}
