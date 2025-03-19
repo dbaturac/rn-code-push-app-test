@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">RNAndroidCodePushTest</string>
-    <string moduleConfig="true" name="CodePushDeploymentKey">dk_EVB7NsftVses8xhVB6ymteNgSKwHpcohs2oam9fjugobzww61yke</string>
+    <string moduleConfig="true" name="CodePushPublicKey">dk_EVB7NsftVses8xhVB6ymteNgSKwHpcohs2oam9fjugobzww61yke</string>
     <string moduleConfig="true" name="CodePushServerUrl">https://codepush.cenkce.com/</string>
 </resources>
