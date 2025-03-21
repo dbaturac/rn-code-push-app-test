@@ -56,6 +56,8 @@ const App: React.FC = () => {
       }}>
       <Text>{`20 mart 2025 14:53\n${currentVersion}\n`}</Text>
       <Text>{`hello world.\n${currentVersion}\n`}</Text>
+      <Text>{`20 mart 2025 14:53\n${currentVersion}\n`}</Text>
+      <Text>{`hello world.\n${currentVersion}\n`}</Text>
 
       <Snackbar
           visible={snackbarVisible}
