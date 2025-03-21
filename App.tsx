@@ -9,7 +9,7 @@ import Snackbar from './src/components/common/snackbar';
 // import { useCodePush } from './src/hooks/useCodePush.ts';
 
 const App: React.FC = () => {
-  const [snackbarVisible, setSnackbarVisible] = useState(true);
+  const [snackbarVisible, setSnackbarVisible] = useState(false);
   // const {isUpdateDownloaded} = useCodePush();
 
   useEffect(() => {
