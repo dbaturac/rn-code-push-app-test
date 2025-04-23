@@ -10,6 +10,31 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+"@appcircle/code-push@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@appcircle/code-push/-/code-push-0.0.2.tgz"
+  integrity sha512-KTj1WFuwS/3UQfUMb3ZUrOmEeG1kEh8rWbgnc3qTlQ+l/BtrOsDuPUPDmog1PAmn+3V/N7sbmkdCZXdt/fuowg==
+  dependencies:
+    appcenter-file-upload-client "0.1.0"
+    proxy-agent "^6.3.0"
+    recursive-fs "^2.1.0"
+    slash "^3.0.0"
+    superagent "^8.0.0"
+    yazl "^2.5.1"
+
+"@appcircle/react-native-code-push@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@appcircle/react-native-code-push/-/react-native-code-push-0.0.1.tgz"
+  integrity sha512-6EIP1ydEW0ro3BuoNHz4hhboRGjtCad0WLxvzJ6rWjXOjw2pIGNpEDOJSapf93t0CtXIJABc/0qTpmIw7XWGGg==
+  dependencies:
+    "@appcircle/code-push" "0.0.2"
+    glob "^7.1.7"
+    hoist-non-react-statics "^3.3.2"
+    inquirer "^8.1.5"
+    plist "^3.0.4"
+    semver "^7.3.5"
+    xcode "3.0.1"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.24.7", "@babel/code-frame@^7.26.2":
   version "7.26.2"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.26.2.tgz"
@@ -1069,19 +1094,6 @@
   version "0.2.3"
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
-
-"@chlee1001/react-native-code-push@^10.0.3":
-  version "10.0.3"
-  resolved "https://registry.npmjs.org/@chlee1001/react-native-code-push/-/react-native-code-push-10.0.3.tgz"
-  integrity sha512-wqwiwUgELAT29WpwcojlEr6GLNnoaiZeR8yo0t07m7U4ChrrRYXCzOqgnKBlbwH1qGVSKlfzE58tcSCjQt0YKw==
-  dependencies:
-    code-push "^4.2.2"
-    glob "^7.1.7"
-    hoist-non-react-statics "^3.3.2"
-    inquirer "^8.1.5"
-    plist "^3.0.4"
-    semver "^7.3.5"
-    xcode "3.0.1"
 
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.1"
@@ -2900,18 +2912,6 @@ co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
   integrity sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==
-
-code-push@^4.2.2:
-  version "4.2.3"
-  resolved "https://registry.npmjs.org/code-push/-/code-push-4.2.3.tgz"
-  integrity sha512-FPwcU9/5lgMJH7MfBgkr4nCta513DGx2v4mg2yW860+8sCQTbhHHnduoAjSlZgyZJj3FIxzW2ccD41pVtTJDow==
-  dependencies:
-    appcenter-file-upload-client "0.1.0"
-    proxy-agent "^6.3.0"
-    recursive-fs "^2.1.0"
-    slash "^3.0.0"
-    superagent "^8.0.0"
-    yazl "^2.5.1"
 
 collect-v8-coverage@^1.0.0:
   version "1.0.2"
