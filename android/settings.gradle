@@ -5,4 +5,5 @@ rootProject.name = 'RNCodepushTest'
 //include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
 include ':app', ':appcircle_react-native-code-push'
-project(':appcircle_react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/@appcircle/react-native-code-push/android/app')
+project(':appcircle_react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/@appcircle/react-native-code-push/android')
+
